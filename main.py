@@ -1,8 +1,8 @@
 from dotenv import load_dotenv
 import os
 
-from ai_assistant.chat.openai_service import OpenAiChatService
-from ai_assistant.tools import tools
+from chat.openai_service import OpenAiChatService
+from tools import tools
 import gradio as gr
 
 

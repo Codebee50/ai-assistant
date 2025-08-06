@@ -3,7 +3,7 @@ from openai import OpenAI
 import json
 
 import openai
-from ..tools.prices import checkout_products, get_item_price, get_product_discount, get_product_names
+from tools.prices import checkout_products, get_item_price, get_product_discount, get_product_names
 from pydub import AudioSegment
 from pydub.playback import play
 import pygame
