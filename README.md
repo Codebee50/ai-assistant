@@ -12,19 +12,32 @@ A Gradio-based AI chatbot powered by OpenAI's GPT-4o-mini model with custom tool
 1. Clone the repository:
 ```bash
 git clone https://github.com/Codebee50/ai-assistant.git
-cd ai-assistant/src/ai_assistant
+cd ai-assistant
 ```
 
-2. Install the required dependencies:
+
+
+2. Create a virtual environment
+```bash
+python -m venv venv
+```
+
+3. Activate the virtual environment
+```bash
+python -m venv venv
+```
+
+
+4. Install the required dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Set up your environment variables:
+4. Set up your environment variables:
    - Create a `.env` file in the root directory
    - Add your OpenAI API key:
 ```
-OPENAI_API_KEY=sk-proj-your-api-key-here
+OPENAI_API_KEY=<your-api-key-here>
 ```
 
 ## Usage
@@ -42,30 +55,20 @@ The application will:
 ## API Key Setup
 
 Make sure your OpenAI API key:
-- Starts with `sk-proj-`
 - Has no leading or trailing whitespace
 - Is properly set in your `.env` file
 
 If you encounter API key issues, check the troubleshooting guidance provided in the application output.
 
-## Project Structure
 
-```
-├── main.py              # Main application entry point
-├── openai_service.py    # OpenAI service integration
-├── prices.py           # Price-related functionality
-├── tools.py            # Custom tools for the AI assistant
-├── requirements.txt    # Python dependencies
-├── .env               # Environment variables (create this)
-└── README.md          # This file
-```
+
 
 ## Configuration
 
 The application uses GPT-4o-mini by default. You can modify the model in `main.py` if needed:
 
 ```python
-MODEL = "gpt-4o-mini"  # Change this to use a different model
+MODEL = "gpt-4o-mini"  # you can choose to Change this to use a different model
 ```
 
 ## Contributing
@@ -75,9 +78,6 @@ MODEL = "gpt-4o-mini"  # Change this to use a different model
 3. Make your changes
 4. Submit a pull request
 
-## License
-
-[Add your license information here]
 
 ## Troubleshooting
 
@@ -85,4 +85,5 @@ If you encounter issues:
 - Ensure your OpenAI API key is valid and properly formatted
 - Check that all dependencies are installed correctly
 - Verify your Python version meets the requirements
-- Review the console output for specific error messages
+
+
